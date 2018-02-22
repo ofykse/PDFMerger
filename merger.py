@@ -26,7 +26,7 @@ def get_file_paths(number_of_files):
             file_path = input('Enter path of file #' + str(i + 1) + ': ')
 
             if os.path.exists(file_path):
-                if file_path[4:] == '.pdf':
+                if file_path[-4:] == '.pdf':
                     file_paths.append(file_path)
                     break
                 else:
